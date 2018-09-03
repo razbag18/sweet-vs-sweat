@@ -1,0 +1,47 @@
+@media (min-width: 30.5em) {
+  
+  .title{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 4em;
+    color: #dcf9fe;
+  }
+  
+  h3{
+    font-family: 'Fredoka One', cursive;
+  }
+
+  .donut{
+    width: 100%;
+    height: auto;
+  }
+
+  .running{
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+.title{
+  display: flex;
+  justify-content: space-evenly;  
+}
+
+.donut{
+  width: 200px;
+  height: 200px;
+}
+
+.running{
+  width: 200px;
+  height: 200px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
