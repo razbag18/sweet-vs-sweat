@@ -4,11 +4,9 @@ import { Link } from 'react-router-dom'
 export default function Results(props){
   return <div>
     {props.foodListArray
-      .filter(result =>(
-          result.food.nutrients.ENERC_KCAL)
-      ).map(result => 
-      <p key={result.food.id}>
-        <Link to={`/report/${result.food.label}`}>{result.food.label}</Link>
+      .map(result => 
+      <p key={result.fields.item_id}>
+        <Link to={`/report/${result.fields.item_name}`}>{result.fields.item_name}</Link>
       </p>)}
     </div>
 }

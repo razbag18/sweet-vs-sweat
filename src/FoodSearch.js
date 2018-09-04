@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import Swimming from './Swimming'
 export default class FoodSearch extends React.Component {
 
   state = {
@@ -9,20 +8,25 @@ export default class FoodSearch extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    const url = `https://api.edamam.com/api/food-database/parser?`
-    const params = { 
-      ingr: this.state.content, 
-      app_id: '54528c89',
-      app_key: '1a7b19a7854184244ac9ff0f34438d0c' 
-    }
-    axios.get(url, {params})
+    const url = `https://api.nutritionix.com/v1_1/search/${this.state.content}?results=0%3A20&cal_min=0&cal_max=50000&fields=item_name%2Citem_id%2Cnf_calories&appId=6abe098b&appKey=e3ae0e08ed6ba9086b5b6f283d7f53d7`
+    // const params = { 
+    //   results: `0%3A20`,
+    //   cal_min: `0`,
+    //   cal_max: `50000`,
+    //   fields: `item_name%2Citem_id%2Cnf_calories`,
+    //   appId: `6abe098b`,
+    //   appKey: `e3ae0e08ed6ba9086b5b6f283d7f53d7`
+    // }
+
+    axios.get(url)
       .then(res => {
 
-        this.props.setFoodList(res.data.hints)
+        this.props.setFoodList(res.data.hits)
         this.props.history.push('/results')
 
       })
   }
+
   
     
     //return an object with food.label and calories
@@ -55,7 +59,7 @@ export default class FoodSearch extends React.Component {
         <p>Enter a guilty treat to see how much exercise you'll need in order to burn it off. You might start to question if you really can afford those empty calories...</p>
         <form onSubmit={this.handleSubmit}>
           <input placeholder="Type food here... " onChange={e=> {this.setState({ content: e.target.value })} }/>
-          <button>Search</button>*
+          <button>Search</button>
         </form>
       </div>
     )

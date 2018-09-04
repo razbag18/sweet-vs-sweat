@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   render() {
-    const { foodListArray } =this.state
+    const { foodListArray } = this.state
     return (
       <div className="App">
         <nav>
@@ -46,7 +46,7 @@ class App extends Component {
           </Switch>
         </main>
        
-        <footer>*Calories displayed are per 100 grams, unless stated. Please note results are only a guide, as the energy you actually burn may vary depending on other factors such as age, gender, and how you move.</footer>
+        <footer>Please note results are only a guide, as the energy you actually burn may vary depending on other factors such as age, gender, and how you move.</footer>
       </div>
     );
   }
