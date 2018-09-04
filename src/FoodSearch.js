@@ -40,14 +40,20 @@ export default class FoodSearch extends React.Component {
 
   renderResult = (food, index) => (
     <div key={index}>
-      <a href={`/calorie_count?food=${food}`} onClick={this.selectedItem}>{food}</a>
+      <a href={`/calorie_count?food=${food.name}`} onClick={this.selectedItem}>{food.name}</a>
+      <p>{food.calories} kcal</p>
     </div>
   )
 
   //problems: some have calories, some dont. need an if statement, if results have food.nutrients.ENERC_KCAL then display, else no
   filteredFood = () => Array.from(
     new Set(
-      this.state.foodListArray.map(result => result.food.label.toLowerCase())
+      this.state.foodListArray
+      .filter(result =>(
+        result.food.nutrients.ENERC_KCAL)
+      ).map(result => (
+        { name: result.food.label.toLowerCase(), calories: Math.round(result.food.nutrients.ENERC_KCAL) }
+      ))
     )
   )
 
