@@ -23,7 +23,7 @@ export default class FoodSearch extends React.Component {
 
       })
   }
-
+  
     
     //return an object with food.label and calories
 

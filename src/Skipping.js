@@ -7,8 +7,8 @@ function minsOfSkipping(calories){
 export default function Skipping(props){
   return <section>
 
-  <img className="donut" src={"/images/skipping.png"} />
-  <p>{minsOfSkipping(props.calories)} minutes of Skipping</p>
+    <img className="donut" src={"/images/skipping.png"} />
+    <p>{minsOfSkipping(props.calories)} minutes of Skipping</p>
 
   </section>
 }

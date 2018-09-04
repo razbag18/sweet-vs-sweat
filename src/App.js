@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch, Redirect } from 'react-router-dom'
-import Home from './Home'
 import FoodSearch from './FoodSearch'
 import Results from './Results'
 import Report from './Report'
+import './App.css'
 
 
 

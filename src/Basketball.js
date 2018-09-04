@@ -4,11 +4,11 @@ function minsOfBasketball(calories){
   return (calories / 7).toFixed(0)
 }
 
-export default function Basketball(){
+export default function Basketball(props){
   return <section>
 
-  <img className="donut" src={"/images/basketball.png"} />
-  <p>{minsOfBasketball(400)} minutes of playing Basketball</p>
+    <img className="donut" src={"/images/basketball.png"} />
+    <p>{minsOfBasketball(props.calories)} minutes of playing Basketball</p>
 
   </section>
 }
