@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Swimming from './Swimming'
 export default class FoodSearch extends React.Component {
 
   state = {
@@ -41,7 +42,7 @@ export default class FoodSearch extends React.Component {
   renderResult = (food, index) => (
     <div key={index}>
       <a href={`/calorie_count?food=${food.name}`} onClick={this.selectedItem}>{food.name}</a>
-      <p>{food.calories} kcal</p>
+      <p>{food.calories}kcal</p>
     </div>
   )
 
@@ -62,11 +63,12 @@ export default class FoodSearch extends React.Component {
       <div className="FoodSearch">
         <form onSubmit={this.handleSubmit} action="">
           <input placeholder="Type food here... " onChange={this.handleChange} type="text"/>
-          <button>Search</button>
+          <button>Search</button>*
         </form>
         <div>
           {this.filteredFood().map(this.renderResult)}
         </div>
+        {/* <div><Swimming calories= {this.renderResult.food.calories} /></div> */}
       </div>
     )
 

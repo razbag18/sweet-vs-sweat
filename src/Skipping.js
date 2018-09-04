@@ -4,11 +4,11 @@ function minsOfSkipping(calories){
   return (calories / 14).toFixed(0)
 }
 
-export default function Skipping(){
+export default function Skipping(props){
   return <section>
 
   <img className="donut" src={"/images/skipping.png"} />
-  <p>{minsOfSkipping(400)} minutes of Skipping</p>
+  <p>{minsOfSkipping(props.calories)} minutes of Skipping</p>
 
   </section>
 }

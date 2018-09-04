@@ -10,6 +10,8 @@ import Golf from './Golf';
 
 
 export default function Home(){
+
+
   return <section>
     <div className='title'>
       <img className="donut" src={"/images/donut.png"} />
@@ -19,13 +21,20 @@ export default function Home(){
     <h3>Just one more doughnut? Find out how much those calories are adding up!</h3>
     <p>Enter a guilty treat to see how much exercise you'll need in order to burn it off. You might start to question if you really can afford those empty calories...</p>
     <div><FoodSearch /></div>
-    <div><Swimming /></div>
-    <div><Skipping /></div>
-    <div><Jogging /></div>
-    <div><Basketball /></div>
-    <div><Golf /></div>
-    <div><Yoga /></div>
+    <section className="exercises">
+      
+      <div>OR</div>
+      <div><Skipping calories="1000" /></div>
+      <div>OR</div>
+      <div><Jogging /></div>
+      <div>OR</div>
+      <div><Basketball /></div>
+      <div>OR</div>
+      <div><Golf /></div>
+      <div>OR</div>
+      <div><Yoga /></div>
+    </section>
     
-    <footer>Calories displayed are per 100 grams, unless stated. Please note results are only a guide, as the energy you actually burn may vary depending on other factors such as age, gender, and how you move.</footer>
+    <footer>*Calories displayed are per 100 grams, unless stated. Please note results are only a guide, as the energy you actually burn may vary depending on other factors such as age, gender, and how you move.</footer>
   </section>
 }
