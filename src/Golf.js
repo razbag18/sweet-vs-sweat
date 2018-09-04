@@ -1,14 +1,14 @@
 import React from 'react'
 
-function minsOfGolf(calories){
-  return (calories / 5).toFixed(0)
+function minsOfGolf(props){
+  return (props.calories / 5).toFixed(0)
 }
 
-export default function Golf(){
+export default function Golf(props){
   return <section>
 
   <img className="donut" src={"/images/golf.png"} />
-  <p>{minsOfGolf(400)} minutes of playing Golf</p>
+  <p>{minsOfGolf(props)} minutes of playing Golf</p>
 
   </section>
 }
