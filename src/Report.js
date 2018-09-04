@@ -17,6 +17,7 @@ export default function Report({match, foodListArray}){
   return <div>
       <h3>{result.fields.item_name}</h3>
       <p>{result.fields.nf_calories} kCal</p>
+      <p><span>{result.fields.nf_serving_size_qty}</span>{result.fields.nf_serving_size_unit}</p>
       <div><Skipping calories= {result.fields.nf_calories} /></div>
       <div>OR</div>
       <div><Swimming calories= {result.fields.nf_calories} /></div>

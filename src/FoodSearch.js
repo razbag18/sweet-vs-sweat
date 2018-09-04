@@ -8,23 +8,19 @@ export default class FoodSearch extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    const url = `https://api.nutritionix.com/v1_1/search/${this.state.content}?results=0%3A20&cal_min=0&cal_max=50000&fields=item_name%2Citem_id%2Cnf_calories&appId=6abe098b&appKey=e3ae0e08ed6ba9086b5b6f283d7f53d7`
-    // const params = { 
-    //   results: `0%3A20`,
-    //   cal_min: `0`,
-    //   cal_max: `50000`,
-    //   fields: `item_name%2Citem_id%2Cnf_calories`,
-    //   appId: `6abe098b`,
-    //   appKey: `e3ae0e08ed6ba9086b5b6f283d7f53d7`
-    // }
+    const url = `https://api.nutritionix.com/v1_1/search/${this.state.content}?results=0%3A20&cal_min=0&cal_max=50000&fields=item_name%2Citem_id%2Cnf_calories`
+      const params = { 
+        appId: `6abe098b`,
+        appKey: `e3ae0e08ed6ba9086b5b6f283d7f53d7`
+      }
 
-    axios.get(url)
-      .then(res => {
+      axios.get(url, {params} )
+        .then(res => {
 
-        this.props.setFoodList(res.data.hits)
-        this.props.history.push('/results')
+          this.props.setFoodList(res.data.hits)
+          this.props.history.push('/results')
 
-      })
+        })
   }
 
   
