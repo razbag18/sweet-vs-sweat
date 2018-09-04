@@ -7,11 +7,12 @@ import Jogging from './Jogging'
 import Yoga from './Yoga'
 import Basketball from './Basketball'
 
+//redirect if foodListArray.length === 0
 
 export default function Report({match, foodListArray}){
   console.log(foodListArray)
   // if(foodListArray.length === 0){
-  //   <Redirect to="/"/>
+  //   <Redirect push to="/"/>
   // } else{
   const result = foodListArray.find(result => result.fields.item_name === match.params.label)
   return <div>
