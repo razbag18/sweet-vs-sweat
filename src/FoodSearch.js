@@ -33,6 +33,7 @@ export default class FoodSearch extends React.Component {
           <input placeholder="Type food here... " onChange={e=> {this.setState({ content: e.target.value })} }/>
           <button>Search</button>
         </form>
+        {/* <img className="mouth" src={"/images/mouth.png"} /> */}
         <img className="candy" src={"/images/candy.png"} />
       </div>
     )

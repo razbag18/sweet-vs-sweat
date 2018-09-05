@@ -12,7 +12,6 @@
   height: 200px;
 }
 
-
 .parallax { 
   display: flex;
   align-items: center;
@@ -46,12 +45,27 @@
   text-align: center;
 }
 
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #71a41f;
+  color: white;
+  text-align: center;
+  height: 40px;
+  padding-top: 10px;
+  font-family: 'Gamja Flower', cursive;
+  font-size: calc(0.7em + 0.7vw)
+}
+
 
 
 
 @import url('https://fonts.googleapis.com/css?family=Jua');
 
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
 
 
 

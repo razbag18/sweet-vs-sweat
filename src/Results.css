@@ -1,0 +1,28 @@
+.results-div{
+  margin: 0%;
+  height:auto;
+  background-color:#fbf6ec;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: calc(0.8em + 0.8vw);
+  margin: 0;
+  font-family: 'Gamja Flower', cursive;
+  position: relative;
+}
+
+ul{
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #5fbbfb;
+}

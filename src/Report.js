@@ -11,9 +11,9 @@ import Basketball from './Basketball'
 
 export default function Report({match, foodListArray}){
   console.log(foodListArray)
-  // if(foodListArray.length === 0){
-  //   <Redirect push to="/"/>
-  // } else{
+  if(foodListArray.length === 0){
+    return <Redirect to={{pathname: '/'}} />
+  } else {
   const result = foodListArray.find(result => result.fields.item_name === match.params.label)
   return <div>
       <h3>{result.fields.item_name}</h3>
@@ -32,5 +32,5 @@ export default function Report({match, foodListArray}){
       <div><Yoga calories = {result.fields.nf_calories}/></div> 
 
     </div>
-  // }
+  }
 }
