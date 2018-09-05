@@ -28,13 +28,14 @@ class App extends Component {
     const { foodListArray } = this.state
     return (
       <div className="App">
-        <nav>
+        {/* <nav>
           <Link to="/">Search</Link>
-        </nav>
-        <div className='title'>
+        </nav> */}
+        <div className='parallax'>
           <img className="donut" src={"/images/donut.png"} />
-          <h1>SWEET VS SWEAT</h1>
+          <h1 className="sweet-vs-sweat">SWEET VS SWEAT</h1>
           <img className="running" src={"/images/running.png"} />
+          
         </div>
         <main>
           <Switch>
@@ -45,6 +46,9 @@ class App extends Component {
               render={(props)=> <Report {...props} foodListArray={foodListArray}/>} />
           </Switch>
         </main>
+        
+        <div className="parallax"></div>
+
        
         <footer>Please note results are only a guide, as the energy you actually burn may vary depending on other factors such as age, gender, and how you move.</footer>
       </div>

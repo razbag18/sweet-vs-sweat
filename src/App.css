@@ -2,41 +2,6 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 30.5em) {
-  
-  .title{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  h1{
-    font-family: 'Fredoka One', cursive;
-    font-size: 4em;
-    color: #dcf9fe;
-  }
-  
-  h3{
-    font-family: 'Fredoka One', cursive;
-  }
-
-  .donut{
-    width: 100%;
-    height: auto;
-  }
-
-  .running{
-    width: 100%;
-    height: auto;
-  }
-
-}
-
-.title{
-  display: flex;
-  justify-content: space-evenly;  
-}
-
 .donut{
   width: 200px;
   height: 200px;
@@ -48,35 +13,46 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+.parallax { 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* The image used */
+  background-image: url('/images/park.png');
+  overflow: hidden;
 
-.App {
+  /* Set a specific height */
+  height: 600px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.sweet-vs-sweat{
+  font-family: 'Jua', sans-serif;
+  font-size: calc(2em + 2vw);
+  padding: 5px;
+  width: 200px;
+  height: 150px; 
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
 
-.App-title {
-  font-size: 1.5em;
-}
 
-.App-intro {
-  font-size: large;
-}
+@import url('https://fonts.googleapis.com/css?family=Jua');
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+
 
 

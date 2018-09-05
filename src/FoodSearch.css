@@ -1,0 +1,38 @@
+.food-search{
+  margin: 0%;
+  height:400px;
+  background-color:#fbf6ec;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: calc(0.8em + 0.8vw);
+  margin: 0;
+  font-family: 'Gamja Flower', cursive;
+  position: relative;
+}
+
+h1{
+  margin: 0;
+  padding-top: 5%; 
+}
+
+.search-form input{
+  padding: 10px;
+}
+
+.search-form{
+  display: inline-block;
+}
+
+.candy{
+  width: auto;
+  height: 15vmin;
+  position: absolute;
+  left: 73%;
+  bottom: 8%;
+  overflow: hidden;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+
+
