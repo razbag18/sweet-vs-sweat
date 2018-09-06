@@ -33,7 +33,7 @@ class App extends Component {
             <img className="donut" src={"/images/donut.png"} />
             <img className="running" src={"/images/running.png"} />
           </div>
-          <Link to ='/' style={{ textDecoration: 'none' }}>
+          <Link to ='/' style={{ textDecoration: 'none', zIndex: '1' }}>
             <h1 className="sweet-vs-sweat">SWEET VS SWEAT</h1>
           </Link>
         </div>
