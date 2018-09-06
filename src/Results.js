@@ -10,7 +10,7 @@ export default function Results(props){
   } else {
     return <div className="results-div">
       <h1 className="result-h1">Did you mean...</h1>
-      <img className="cupcake" src={"/images/cupcake.png"} />
+      <img className="cupcake" src={"images/cupcake.png"} />
       {Array.from(new Set(props.foodListArray
         .map(result => result.fields.item_name))).map((item, index) => (
           <ul>

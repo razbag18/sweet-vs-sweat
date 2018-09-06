@@ -7,7 +7,7 @@ function minsOfGolf(calories){
 export default function Golf(props){
   return <section>
 
-    <img className="sport" src={"/images/golf.png"} />
+    <img className="sport" src={"images/golf.png"} />
     <p>{minsOfGolf(props.calories)} minutes of playing Golf</p>
 
   </section>

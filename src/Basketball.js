@@ -7,7 +7,7 @@ function minsOfBasketball(calories){
 export default function Basketball(props){
   return <section>
 
-    <img className="sport" src={"/images/Basketball.png"} />
+    <img className="sport" src={"images/Basketball.png"} />
     <p>{minsOfBasketball(props.calories)} minutes of playing Basketball</p>
 
   </section>

@@ -30,8 +30,8 @@ class App extends Component {
       <div className="App">
         <div className='parallax'>
           <div className="images">
-            <img className="donut" src={"/images/donut.png"} />
-            <img className="running" src={"/images/running.png"} />
+            <img className="donut" src={"images/donut.png"} />
+            <img className="running" src={"images/running.png"} />
           </div>
           <Link to ='/' style={{ textDecoration: 'none', zIndex: '1' }}>
             <h1 className="sweet-vs-sweat">SWEET VS SWEAT</h1>

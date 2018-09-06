@@ -7,7 +7,7 @@ function minsOfWeights(calories){
 export default function Weights(props){
   return <section>
 
-    <img className="sport" src={"/images/weights.png"} />
+    <img className="sport" src={"images/weights.png"} />
     <p>{minsOfWeights(props.calories)} minutes of Resistance (weight) Training, Power Lifting or Body Building, vigorous effort</p>
 
   </section>

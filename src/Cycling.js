@@ -7,7 +7,7 @@ function minsOfCycling(calories){
 export default function Cycling(props){
   return <section>
 
-    <img className="sport" src={"/images/cycling.png"} />
+    <img className="sport" src={"images/cycling.png"} />
     <p>{minsOfCycling(props.calories)} minutes of general Cycling</p>
 
   </section>
