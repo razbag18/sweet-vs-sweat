@@ -6,30 +6,42 @@ import Swimming from './Swimming'
 import Jogging from './Jogging'
 import Yoga from './Yoga'
 import Basketball from './Basketball'
+import Cycling from './Cycling'
+import Pingpong from './Pingpong'
+import Weights from './Weights'
+import './Report.css'
 
 //redirect if foodListArray.length === 0
 
 export default function Report({match, foodListArray}){
-  console.log(foodListArray)
   if(foodListArray.length === 0){
     return <Redirect to={{pathname: '/'}} />
   } else {
   const result = foodListArray.find(result => result.fields.item_name === match.params.label)
-  return <div>
+  return <div className="report" >
       <h3>{result.fields.item_name}</h3>
-      <p>{result.fields.nf_calories} kCal</p>
-      <p><span>{result.fields.nf_serving_size_qty}</span>{result.fields.nf_serving_size_unit}</p>
-      <div><Skipping calories= {result.fields.nf_calories} /></div>
-      <div>OR</div>
-      <div><Swimming calories= {result.fields.nf_calories} /></div>
-      <div>OR</div>
-      <div><Jogging calories = {result.fields.nf_calories}/></div>
-      <div>OR</div>
-      <div><Basketball calories = {result.fields.nf_calories}/></div>
-      <div>OR</div>
-      <div><Golf calories = {result.fields.nf_calories}/></div>
-      <div>OR</div>
-      <div><Yoga calories = {result.fields.nf_calories}/></div> 
+      <p className="calories">{result.fields.nf_calories} kCal</p>
+      <div className="exercise">
+        <div><Skipping calories= {result.fields.nf_calories} /></div>
+        
+        <div><Swimming calories= {result.fields.nf_calories} /></div>
+        
+        <div><Jogging calories = {result.fields.nf_calories}/></div>
+        
+        <div><Cycling calories = {result.fields.nf_calories}/></div>
+        
+        <div><Basketball calories = {result.fields.nf_calories}/></div>
+        
+        <div><Weights calories = {result.fields.nf_calories}/></div>
+        
+        <div><Golf calories = {result.fields.nf_calories}/></div>
+        
+        <div><Pingpong calories = {result.fields.nf_calories}/></div> 
+        
+        <div><Yoga calories = {result.fields.nf_calories}/></div>
+      </div>
+      <footer>Please note results are only a guide, as the energy you actually burn may vary depending on other factors such as age, gender, and how you move.</footer>
+      
 
     </div>
   }

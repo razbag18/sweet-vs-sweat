@@ -9,7 +9,7 @@ export default function Results(props){
     return <Redirect to={{pathname: '/'}} />
   } else {
     return <div className="results-div">
-      <h1>Did you mean...</h1>
+      <h1 className="result-h1">Did you mean...</h1>
       {Array.from(new Set(props.foodListArray
         .map(result => result.fields.item_name))).map((item, index) => (
           <ul>

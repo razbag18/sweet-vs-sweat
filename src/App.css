@@ -2,14 +2,50 @@
   box-sizing: border-box;
 }
 
-.donut{
-  width: 200px;
-  height: 200px;
+
+@media only screen and (max-width: 600px) {
+  .parralax {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .images {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    height: 100%;
+    align-items: center;
+  }
+
+  .donut {
+    width: 40vmin;
+    height: auto;
+  
+  }
+  
+  .running {
+    width: 40vmin;
+    height: auto;
+  }
 }
 
-.running{
-  width: 200px;
-  height: 200px;
+.donut {
+  width: 40vmin;
+  height: 40vmin;
+}
+
+.running {
+  width: 40vmin;
+  height: 40vmin;
+}
+
+.images{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
 }
 
 .parallax { 
@@ -17,7 +53,7 @@
   align-items: center;
   justify-content: space-evenly;
   /* The image used */
-  background-image: url('/images/park.png');
+  background-image: url('/images/park2.png');
   overflow: hidden;
 
   /* Set a specific height */
@@ -32,31 +68,52 @@
   padding: 0;
 }
 
+.parallax2 { 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* The image used */
+  background-image: url('/images/park2.png');
+  overflow: hidden;
+
+  /* Set a specific height */
+  height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
 .sweet-vs-sweat{
   font-family: 'Jua', sans-serif;
-  font-size: calc(2em + 2vw);
+  font-size: calc(2.5em + 2.5vw);
   padding: 5px;
-  width: 200px;
-  height: 150px; 
+  width: 200px; 
   margin: 10px;
   color: white;
   font-weight: bold;
-  font-size: 3em;
   text-align: center;
 }
 
 footer{
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: #71a41f;
   color: white;
   text-align: center;
-  height: 40px;
+  height: auto;
   padding-top: 10px;
   font-family: 'Gamja Flower', cursive;
   font-size: calc(0.7em + 0.7vw)
 }
+
+
 
 
 

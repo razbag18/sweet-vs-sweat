@@ -20,3 +20,30 @@ Golf 5 Cal DONE
 Referenced from Bupa, the Blue Room
 
 Please note results are only a guide, as the energy you actually burn may vary depending on other factors such as age, gender, and how you move.
+
+
+FOR ANIMATIONS IF TIME
+-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: -2s;
+
+
+@-webkit-keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}

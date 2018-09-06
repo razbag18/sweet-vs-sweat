@@ -28,14 +28,14 @@ class App extends Component {
     const { foodListArray } = this.state
     return (
       <div className="App">
-        {/* <nav>
-          <Link to="/">Search</Link>
-        </nav> */}
         <div className='parallax'>
-          <img className="donut" src={"/images/donut.png"} />
-          <h1 className="sweet-vs-sweat">SWEET VS SWEAT</h1>
-          <img className="running" src={"/images/running.png"} />
-          
+          <div className="images">
+            <img className="donut" src={"/images/donut.png"} />
+            <img className="running" src={"/images/running.png"} />
+          </div>
+          <Link to ='/' style={{ textDecoration: 'none' }}>
+            <h1 className="sweet-vs-sweat">SWEET VS SWEAT</h1>
+          </Link>
         </div>
         <main>
           <Switch>
@@ -47,11 +47,12 @@ class App extends Component {
           </Switch>
         </main>
         
-        <div className="parallax"></div>
+        <div className="parallax2"></div>
+
+        <footer>Please note results are only a guide, as the energy you actually burn may vary depending on other factors such as age, gender, and how you move.</footer>
 
        
-        <footer>Please note results are only a guide, as the energy you actually burn may vary depending on other factors such as age, gender, and how you move.</footer>
-      </div>
+        </div>
     );
   }
 }

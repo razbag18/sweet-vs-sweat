@@ -31,7 +31,7 @@ export default class FoodSearch extends React.Component {
         <p>Enter a guilty treat to see how much exercise you'll need in order to burn it off. You might start to question if you really can afford those empty calories...</p>
         <form className="search-form" onSubmit={this.handleSubmit}>
           <input placeholder="Type food here... " onChange={e=> {this.setState({ content: e.target.value })} }/>
-          <button>Search</button>
+          <button className="btn">SEARCH</button>
         </form>
         {/* <img className="mouth" src={"/images/mouth.png"} /> */}
         <img className="candy" src={"/images/candy.png"} />

@@ -1,0 +1,55 @@
+.exercise {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.report{
+  background-color:#fbf6ec;
+}
+
+section{
+  width: 400px;
+  text-align: center;
+  font-family: 'Gamja Flower';
+  font-size: calc(0.8em + 0.8vw);
+}
+
+h3{
+  margin: 0;
+  padding-top: 2.5vh;
+  font-family: 'Jua', sans-serif;
+  text-align: center;
+  font-size: calc(1em + 1vw);
+
+}
+
+.calories{
+  font-family: 'Jua', sans-serif;
+  text-align: center;
+  font-size: calc(0.8em + 0.8vw);
+}
+
+.sport{
+  height: auto;
+  width: 250px;
+}
+
+footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #71a41f;
+  color: white;
+  text-align: center;
+  height: auto;
+  padding-top: 10px;
+  font-family: 'Gamja Flower', cursive;
+  font-size: calc(0.7em + 0.7vw)
+}
+
+@import url('https://fonts.googleapis.com/css?family=Jua');
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+
+/* search again */

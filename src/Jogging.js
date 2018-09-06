@@ -7,8 +7,8 @@ function minsOfJogging(calories){
 export default function Jogging(props){
   return <section>
 
-    <img className="donut" src={"/images/running.png"} />
-    <p>{minsOfJogging(props.calories)} minutes of Jogging</p>
+    <img className="sport" src={"/images/running.png"} />
+    <p>{minsOfJogging(props.calories)} minutes of general Jogging</p>
 
   </section>
 }
