@@ -1,5 +1,5 @@
 import React from 'react'
-import { Redirect } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom'
 import Golf from './Golf';
 import Skipping from './Skipping'
 import Swimming from './Swimming'
@@ -19,8 +19,8 @@ export default function Report({match, foodListArray}){
   } else {
   const result = foodListArray.find(result => result.fields.item_name === match.params.label)
   return <div className="report" >
-      <h3>{result.fields.item_name}</h3>
-      <p className="calories">{result.fields.nf_calories} kCal</p>
+      
+      <p className="calories">{result.fields.item_name} has {result.fields.nf_calories} kCal. If you want to eat that you can burn it off with one of the following exercises...</p>
       <div className="exercise">
         <div><Skipping calories= {result.fields.nf_calories} /></div>
         
@@ -39,8 +39,16 @@ export default function Report({match, foodListArray}){
         <div><Pingpong calories = {result.fields.nf_calories}/></div> 
         
         <div><Yoga calories = {result.fields.nf_calories}/></div>
+       
       </div>
-      <footer>Please note results are only a guide, as the energy you actually burn may vary depending on other factors such as age, gender, and how you move.</footer>
+      <div className="report-btn-div">
+        <button className="report-btn"> 
+          <Link to ='/' style={{ textDecoration: 'none', color: 'white'}}>
+            <h1 className="search-again-btn">SEARCH AGAIN</h1>
+          </Link>
+        </button>
+      </div>
+      
       
 
     </div>

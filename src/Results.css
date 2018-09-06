@@ -4,25 +4,34 @@
   background-color:#fbf6ec;
   padding-left: 15%;
   padding-right: 20%;
-  font-size: calc(0.8em + 0.8vw);
+  font-size: calc(1em + 0.9vw);
   margin: 0;
   font-family: 'Gamja Flower', cursive;
   position: relative;
+  text-align: left;
 }
 
 ul{
   margin: 0;
+  padding-left: 0;
 }
 
-li{
+ul:first-child{
+  border: 0;
+  
+}
+
+li {
   list-style-type: none;
-  padding-bottom: 5%;
-  text-align: center;
+  padding-bottom: 3%;
+  border-top: 1px solid grey;
+  padding-top: 5px;
 }
 
 a{
   text-decoration: none;
   color: black;
+  
 }
 
 a:hover{
@@ -32,7 +41,28 @@ a:hover{
 
 .result-h1{
   font-family: 'Jua', sans-serif;
-  font-size: calc(0.7em + 0.7vw);
+  font-size: calc(1em + 0.7vw);
 }
+
+.cupcake {
+  position: absolute;
+  width: auto;
+  height: 27vmin;
+  right: 1%;
+  bottom: 2%;
+  overflow: hidden;
+
+}
+
+.macaron {
+  position: absolute;
+  width: auto;
+  height: 10vmin;
+  left: 87%;
+  bottom: 50%;
+  overflow: hidden;
+
+}
+
 
 @import url('https://fonts.googleapis.com/css?family=Jua');

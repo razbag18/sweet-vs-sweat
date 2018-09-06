@@ -6,48 +6,70 @@
 
 .report{
   background-color:#fbf6ec;
+  height: auto;
 }
 
 section{
-  width: 400px;
+  width: 300px;
+  height: auto;
   text-align: center;
   font-family: 'Gamja Flower';
-  font-size: calc(0.8em + 0.8vw);
-}
-
-h3{
-  margin: 0;
-  padding-top: 2.5vh;
-  font-family: 'Jua', sans-serif;
-  text-align: center;
-  font-size: calc(1em + 1vw);
-
+  font-size: calc(0.9em + 0.9vw);
 }
 
 .calories{
+  padding-top: 2.5vh;
+  margin: 0;
   font-family: 'Jua', sans-serif;
   text-align: center;
-  font-size: calc(0.8em + 0.8vw);
+  font-size: calc(1em + 1vw);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
 }
 
 .sport{
-  height: auto;
-  width: 250px;
+  height: 40vmin;
+  width: 40vmin;
 }
 
-footer{
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #71a41f;
-  color: white;
-  text-align: center;
-  height: auto;
-  padding-top: 10px;
-  font-family: 'Gamja Flower', cursive;
-  font-size: calc(0.7em + 0.7vw)
+.report-btn-div{
+  display: flex;
+  justify-content: center;
 }
+
+.report-btn{
+  position: absolute;
+  margin-top: 10px;
+  -moz-box-shadow: 0px 7px 0px 0px #e0d2b8;
+  -webkit-box-shadow: 0px 7px 0px 0px #e0d2b8;
+  box-shadow: 0px 7px 0px 0px #e0d2b8;
+  background-color:#e54759;
+  -moz-border-radius:18px;
+  -webkit-border-radius:18px;
+  border-radius:18px;
+  border:1px solid #bc424f;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:'Jua', sans-serif;;
+  font-size:17px;
+  padding:7px 25px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+  }
+  .report-btn:hover {
+    background-color:#bc424f;
+  }
+  .report-btn:active {
+    position:relative;
+    top:1px;
+  }
+
+  .search-again-btn{
+    font-size:calc(0.5em + 0.5vw)
+  }
+
 
 @import url('https://fonts.googleapis.com/css?family=Jua');
 @import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
