@@ -38,7 +38,7 @@ export default class FoodSearch extends React.Component {
       </div>
     )
 
-  }
+  } 
 
 
 
