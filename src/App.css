@@ -11,9 +11,9 @@
 
   .images {
     position: absolute;
-    width: 100%;
+    width: 150%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-flow: column;
     height: 100%;
     align-items: center;
@@ -88,8 +88,8 @@
 
 .images{
   display: flex;
-  width: 90%;
-  justify-content: space-between;
+  width: 150%;
+  justify-content: space-evenly;
   position: absolute;
   
 }

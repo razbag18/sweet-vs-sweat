@@ -7,7 +7,7 @@ function minsOfPingPong(calories){
 export default function pingPong(props){
   return <section>
 
-    <img className="sport" src={"/images/tennis.png"} />
+    <img className="sport" src={"http://i349.photobucket.com/albums/q374/razbag18/tennis_zpsp5tej8ry.png"} />
     <p>{minsOfPingPong(props.calories)} minutes of Ping Pong</p>
 
   </section>

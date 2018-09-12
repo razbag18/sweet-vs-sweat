@@ -34,7 +34,7 @@ export default class FoodSearch extends React.Component {
           <button className="btn">SEARCH</button>
         </form>
         {/* <img className="mouth" src={"/images/mouth.png"} /> */}
-        <img className="candy" src={"/images/candy.png"} />
+        <img className="candy" src={"http://i349.photobucket.com/albums/q374/razbag18/candy_zpszh0tzpti.png?t=1536631878"} />
       </div>
     )
 

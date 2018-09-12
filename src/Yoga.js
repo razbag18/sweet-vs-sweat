@@ -11,7 +11,7 @@ function minsOfYoga(calories){
 export default function Yoga(props){
   return <section>
 
-    <img className="sport" src={"/images/yoga.png"} />
+    <img className="sport" src={"http://i349.photobucket.com/albums/q374/razbag18/yoga_zpsqkoq74xl.png"} />
     <p>{minsOfYoga(props.calories)} minutes of Hatha Yoga</p>
 
   </section>
