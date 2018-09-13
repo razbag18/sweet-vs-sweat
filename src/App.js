@@ -40,7 +40,7 @@ class App extends Component {
         </div>
         <main>
           <Switch>
-            <Route exact path="/" render={props => <FoodSearch {...props} setFoodList={this.setFoodList} />}/>
+            <Route exact path="/sweet-vs-sweat" render={props => <FoodSearch {...props} setFoodList={this.setFoodList} />}/>
             <Route exact path="/results" render={() => <Results foodListArray={foodListArray} />}/>
             <Route 
               path="/report/:label" 
