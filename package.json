@@ -2,6 +2,7 @@
   "name": "sweet-vs-sweat",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://razbag18.github.io/sweet-vs-sweat",
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.4.2",
@@ -13,6 +14,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
   }
 }
