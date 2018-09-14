@@ -43,7 +43,7 @@ export default function Report({match, foodListArray}){
       </div>
       <div className="report-btn-div">
         <button className="report-btn"> 
-          <Link to ='/' style={{ textDecoration: 'none', color: 'white'}}>
+          <Link to ='/sweet-vs-sweat' style={{ textDecoration: 'none', color: 'white'}}>
             <h1 className="search-again-btn">SEARCH AGAIN</h1>
           </Link>
         </button>
